@@ -1,0 +1,21 @@
+# Global ignores
+.DS_Store
+.idea/
+*.iml
+*.log
+*.swp
+*.pyc
+
+# Node, Dart, Flutter, and build artifacts
+node_modules/
+.dart_tool/
+.build/
+/build/
+.pub/
+.pub-cache/
+
+# VS Code
+.vscode/
+
+# Sensitive files
+**/lib/private.dart
