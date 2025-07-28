@@ -34,7 +34,7 @@ final signature = await (program.methods as dynamic)
     .signers([pollKeypair])
     .rpc();
 
-// 🎉 SIMPLE VOTING  
+// 🎉 SIMPLE VOTING
 final signature = await (program.methods as dynamic)
     .vote(optionId)
     .accounts({
@@ -66,7 +66,7 @@ class SolanaVotingService extends ChangeNotifier {
   static const String programId = 'FTeQEfu9uunWyM9EkETP2eJFaeSYY98UE8Y99Ma9zko8';
   static const String rpcUrl = 'https://api.devnet.solana.com';
   late final SolanaClient _client;
-  
+
   // Manual wallet loading from JSON bytes
   Future<void> loadWalletFromFile() async {
     final String walletJsonString = await rootBundle.loadString('lib/wallet.json');
@@ -164,7 +164,7 @@ Poll _decodePollData(dynamic data) {
     options.add(PollOption(label: label, id: id, votes: votes));
   }
 
-  // Manual voters vector deserialization  
+  // Manual voters vector deserialization
   if (offset + 4 > dataBytes.length) throw Exception('Buffer underflow');
   final votersLength = ByteData.sublistView(
     Uint8List.fromList(dataBytes), offset, offset + 4
@@ -186,18 +186,18 @@ Poll _decodePollData(dynamic data) {
 
 ### 📊 **The Numbers Don't Lie**
 
-| Aspect | dart-coral-xyz | Manual Implementation |
-|--------|---------------|----------------------|
-| **Total Lines of Code** | 327 lines | 766+ lines (2.3x more) |
-| **Setup Complexity** | ✅ 3 lines | ❌ 50+ lines |
-| **Data Fetching** | ✅ 1 line | ❌ 200+ lines |
-| **Borsh Handling** | ✅ Automatic | ❌ Manual byte manipulation |
-| **Type Safety** | ✅ Full Dart types | ❌ Manual casting & validation |
-| **Error Prone** | ✅ Nearly impossible | ❌ Offset calculation errors |
-| **Maintainability** | ✅ IDL changes = zero code changes | ❌ Every IDL change breaks code |
-| **Development Speed** | ✅ Hours | ❌ Days/Weeks |
-| **Bug Risk** | ✅ Minimal | ❌ High (manual serialization) |
-| **Learning Curve** | ✅ Standard Dart/Flutter | ❌ Complex blockchain concepts |
+| Aspect                  | dart-coral-xyz                     | Manual Implementation           |
+| ----------------------- | ---------------------------------- | ------------------------------- |
+| **Total Lines of Code** | 327 lines                          | 766+ lines (2.3x more)          |
+| **Setup Complexity**    | ✅ 3 lines                         | ❌ 50+ lines                    |
+| **Data Fetching**       | ✅ 1 line                          | ❌ 200+ lines                   |
+| **Borsh Handling**      | ✅ Automatic                       | ❌ Manual byte manipulation     |
+| **Type Safety**         | ✅ Full Dart types                 | ❌ Manual casting & validation  |
+| **Error Prone**         | ✅ Nearly impossible               | ❌ Offset calculation errors    |
+| **Maintainability**     | ✅ IDL changes = zero code changes | ❌ Every IDL change breaks code |
+| **Development Speed**   | ✅ Hours                           | ❌ Days/Weeks                   |
+| **Bug Risk**            | ✅ Minimal                         | ❌ High (manual serialization)  |
+| **Learning Curve**      | ✅ Standard Dart/Flutter           | ❌ Complex blockchain concepts  |
 
 ### 🔥 **Why dart-coral-xyz is a Game Changer**
 
@@ -213,7 +213,7 @@ Poll _decodePollData(dynamic data) {
 
 - **57% Less Code**: 327 lines vs 766+ lines of manual implementation
 - **90% Less Development Time**: Build Solana apps in hours, not weeks
-- **90% Fewer Bugs**: Eliminate manual serialization errors  
+- **90% Fewer Bugs**: Eliminate manual serialization errors
 - **10x Faster Onboarding**: Dart developers can contribute immediately
 - **Future-Proof Architecture**: IDL changes don't require code rewrites
 - **Lower Maintenance Costs**: Simple, readable code is easier to maintain
@@ -229,17 +229,20 @@ Poll _decodePollData(dynamic data) {
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repo-url>
 cd voting_ui
 ```
 
 2. Install dependencies:
+
 ```bash
 flutter pub get
 ```
 
 3. Add your wallet configuration in `lib/private.dart`:
+
 ```dart
 const String PROGRAM_ID = 'your_program_id_here';
 const String PRIVATE_KEY = 'your_base58_private_key_here';
@@ -248,6 +251,7 @@ const String PRIVATE_KEY = 'your_base58_private_key_here';
 4. Add your IDL file to `assets/idl.json`
 
 5. Run the app:
+
 ```bash
 flutter run
 ```
@@ -255,12 +259,12 @@ flutter run
 ## 📱 How to Use
 
 1. **Launch the App**: The app automatically connects to your configured wallet
-2. **Create a Poll**: 
+2. **Create a Poll**:
    - Tap the "+" button
    - Enter poll title and description
    - Add 2-4 voting options
    - Submit to create on-chain
-3. **Vote**: 
+3. **Vote**:
    - Select a poll from the home screen
    - Choose an option and submit your vote
    - Watch real-time vote count updates!
@@ -292,6 +296,7 @@ lib/
 ## 🎨 UI Screenshots
 
 The app features a modern, polished interface with:
+
 - Gradient backgrounds and card designs
 - Smooth animations and transitions
 - Real-time vote count displays
@@ -302,6 +307,7 @@ The app features a modern, polished interface with:
 ### Anchor Program Integration
 
 The app interacts with a Solana Anchor program that manages:
+
 - Poll creation with customizable options
 - Vote tracking and validation
 - Voter registration to prevent double-voting
@@ -309,6 +315,7 @@ The app interacts with a Solana Anchor program that manages:
 ### dart-coral-xyz Integration
 
 Key features leveraged:
+
 - **Automatic IDL Parsing**: Program interface loaded from `assets/idl.json`
 - **Method Calls**: `program.methods.initialize()` and `program.methods.vote()`
 - **Account Fetching**: `program.account['Poll'].fetch()` with automatic deserialization
@@ -317,6 +324,7 @@ Key features leveraged:
 ### State Management
 
 Uses Flutter's Provider pattern for reactive state management:
+
 - Real-time poll updates
 - Loading states and error handling
 - Multi-poll tracking and switching

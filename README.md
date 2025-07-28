@@ -7,17 +7,20 @@ This repository contains example Flutter/Dart projects demonstrating the **revol
 Each folder showcases the dramatic improvements dart-coral-xyz brings to Solana development:
 
 ### 📊 **`voting_app/`** - Advanced Voting Application ⭐ **FEATURED**
+
 A comprehensive voting application that demonstrates **why dart-coral-xyz is a game changer**:
 
 **🎯 What it showcases:**
+
 - **Complex Data Structures**: Polls with multiple options and voter tracking
-- **Real-time Updates**: Live vote count updates using automatic Borsh deserialization  
+- **Real-time Updates**: Live vote count updates using automatic Borsh deserialization
 - **Multi-Account Management**: Creating and managing multiple poll accounts
 - **Advanced UI**: Modern Flutter interface with gradients, animations, and state management
 - **Production Patterns**: Error handling, state management, and user feedback
 - **Detailed Comparison**: Side-by-side comparison vs 500+ lines of manual implementation
 
 **💰 Business Impact Demonstrated:**
+
 - **57% Less Code**: 327 lines vs 766+ lines of manual Solana integration
 - **10x Faster Development**: Build in hours, not weeks
 - **Zero Borsh Complexity**: Automatic serialization eliminates bugs
@@ -26,7 +29,9 @@ A comprehensive voting application that demonstrates **why dart-coral-xyz is a g
 **Perfect for**: Understanding the massive advantages of dart-coral-xyz, production-ready patterns, and complex Solana app architecture.
 
 ### 🔢 **`basic_counter/`** - Simple Counter
+
 A straightforward counter application demonstrating:
+
 - Program initialization and PDA derivation
 - Basic method calls and account fetching
 - Simple state management patterns
@@ -54,6 +59,7 @@ After exploring these examples, you'll understand:
 ## � Why These Examples Matter
 
 ### **Before dart-coral-xyz (Manual Implementation)**
+
 ```dart
 // 😰 Hundreds of lines of manual Borsh serialization
 List<int> accountBytes = base64Decode(data);
@@ -63,6 +69,7 @@ int offset = 0;
 ```
 
 ### **After dart-coral-xyz**
+
 ```dart
 // 🎉 Simple, clean, reliable
 final accountData = await program.account['Poll']!.fetch(pollAddress);
