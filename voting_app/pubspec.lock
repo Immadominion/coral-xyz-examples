@@ -217,10 +217,11 @@ packages:
   coral_xyz:
     dependency: "direct main"
     description:
-      path: "../dart-coral-xyz"
-      relative: true
-    source: path
-    version: "1.0.0-beta.1"
+      name: coral_xyz
+      sha256: de3d59177cb4b83b4072cbaf972dc34a36289b20130fafabb7086a705f6e038f
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0-beta.2"
   crypto:
     dependency: transitive
     description:

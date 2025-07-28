@@ -14,9 +14,8 @@ dependencies:
   provider: ^6.1.2
   json_annotation: ^4.9.0
   solana: ^0.31.2+1
-  coral_xyz:
-    path: ../dart-coral-xyz
   bs58: ^1.0.2
+  coral_xyz: ^1.0.0-beta.2
 
 
 dev_dependencies:
