@@ -13,9 +13,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   solana: ^0.31.2+1
   borsh: ^0.3.2
-  coral_xyz_anchor:
-    path: ../../dart-coral-xyz
   bs58: ^1.0.2
+  coral_xyz: ^1.0.0-beta.2
 
 dev_dependencies:
   flutter_test:

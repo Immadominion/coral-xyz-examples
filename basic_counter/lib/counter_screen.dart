@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:coral_xyz/coral_xyz_anchor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:coral_xyz_anchor/coral_xyz_anchor.dart';
 import 'package:bs58/bs58.dart' as bs58;
 import 'package:solana/solana.dart' as sol;
 import 'private.dart';
