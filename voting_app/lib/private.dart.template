@@ -1,0 +1,16 @@
+// Template for private configuration
+// Copy this file to lib/private.dart and fill in your actual values
+
+/// Your Solana program ID (replace with your deployed program's address)
+const String PROGRAM_ID = 'YOUR_PROGRAM_ID_HERE';
+
+/// Your wallet's private key in base58 format
+/// You can export this from Phantom, Solflare, or generate with solana-keygen
+const String PRIVATE_KEY = 'YOUR_BASE58_PRIVATE_KEY_HERE';
+
+// Example:
+// const String PROGRAM_ID = 'FTeQEfu9uunWyM9EkETP2eJFaeSYY98UE8Y99Ma9zko8';
+// const String PRIVATE_KEY = 'your_base58_encoded_private_key_from_wallet';
+
+// Note: Never commit your actual private key to version control!
+// This template file helps you understand what values are needed.

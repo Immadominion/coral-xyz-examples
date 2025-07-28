@@ -88,7 +88,7 @@ dependencies:
 
 This example requires a deployed Anchor counter program. You can:
 
-1. **Use the provided program ID** (devnet): `EDz2aKR37AsSv6RdtF34g93UpJRqNUhf1iWf19NwuUH1`
+1. **Use the provided program ID** (devnet): `An8uNPQkHmZVNWgVrxWMtjnx1JvYfdBnfuYksqtMMP8U`
 2. **Deploy your own** following the [Anchor documentation](https://www.anchor-lang.com/docs/getting-started)
 
 ### 4. Add Your IDL
