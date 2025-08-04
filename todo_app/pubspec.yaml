@@ -1,0 +1,26 @@
+name: todo_coral_xyz
+description: "A Todo app using the dart-coral-xyz package for simplified Anchor interactions."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  coral_xyz: ^1.0.0
+  # coral_xyz: 
+  #   path: ../../dart-coral-xyz
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/idl.json

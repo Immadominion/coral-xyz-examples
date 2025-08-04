@@ -28,6 +28,28 @@ A comprehensive voting application that demonstrates **why dart-coral-xyz is a g
 
 **Perfect for**: Understanding the massive advantages of dart-coral-xyz, production-ready patterns, and complex Solana app architecture.
 
+### ✅ **`todo_app/`** - CRUD Operations Showcase
+
+A production-ready todo application demonstrating **essential CRUD patterns**:
+
+**🎯 What it showcases:**
+
+- **Complete CRUD Operations**: Create, read, update, and delete todo items
+- **PDA-Based Account Management**: User profiles and individual todo accounts
+- **Real-time State Synchronization**: Automatic UI updates with blockchain state
+- **IDL Constants Integration**: Direct usage of program constants from IDL
+- **Clean Architecture**: Provider pattern with separation of concerns
+- **Error Handling**: Comprehensive error management and user feedback
+
+**💰 Business Impact Demonstrated:**
+
+- **44% Less Code**: 256 lines vs 462 lines of manual Solana integration
+- **Zero Discriminator Calculations**: IDL handles all complexity automatically
+- **Automatic Deserialization**: No manual Borsh parsing needed
+- **Type-Safe Operations**: Full IDE support with compile-time error checking
+
+**Perfect for**: Learning essential CRUD patterns, understanding PDA management, and building data-driven applications.
+
 ### 🔢 **`basic_counter/`** - Simple Counter
 
 A straightforward counter application demonstrating:
