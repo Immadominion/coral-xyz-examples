@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   provider: ^6.1.2
-  coral_xyz: ^1.0.0
+  coral_xyz: ^1.0.0-beta.3
   # coral_xyz: 
   #   path: ../../dart-coral-xyz
 
